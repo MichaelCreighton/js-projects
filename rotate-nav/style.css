@@ -56,7 +56,7 @@ img {
     background: transparent;
     border: 0;
     font-size: 26px;
-    color: darkgray;
+    color: #666172;
     cursor: pointer;
 }
 
@@ -90,7 +90,7 @@ nav ul {
 }
 nav ul li {
     text-transform: uppercase;
-    color: darkgray;
+    color: #666172;
     margin: 40px 0;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in ;
