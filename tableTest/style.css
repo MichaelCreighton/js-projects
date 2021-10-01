@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'roboto', 'sans-serif';
+    margin: 0;
+    
+}
+h2, a, p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+p {
+    font-size: 2rem;
+}
+.container p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav {
+    display: grid;
+}
+.container {
+    background-color: #FFF;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 20px 0 100px;
+    transform: rotate(180deg);
+    column-gap: 5px;
+    transition: 0.8s 0.2s all ease-in-out;
+
+}
+nav p {
+    opacity: 0;
+    /* transform: scale(0); */
+    /* transform: rotate(180deg); */
+    transition: all 0.4s 0.2s ease-in-out;
+}
+.show-nav p {
+    transform: rotate(180deg);
+    opacity: 1;
+} 
+.show-nav #plus {
+    transform: rotate(720deg);
+    color: #000;
+    text-shadow: 0px 0px 10px red;
+}
+.show-nav.container {
+    background-color: red;
+    
+}
+#plus {
+    font-size: 3rem;
+    opacity: 1;
+    cursor: pointer;
+    color: red;
+    transition: all 0.6s ease-in-out;
+}
+
+table, th, td {
+    border:1px solid black;
+}
+td,
+th {
+    padding: 10px 20px;
+}
+td {
+    max-width: 350px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+td:last-child {
+    color: red;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 100xp 10px;
+}
+
+.text {
+    margin-top: 100px;
+}

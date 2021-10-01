@@ -5,15 +5,16 @@ window.addEventListener('scroll', checkBoxes);
 checkBoxes();
 
 function checkBoxes() {
-    const triggerPoint = (window.innerHeight / 5) * 4;
+    const triggerPoint = (window.innerHeight / 5) * 3;
     boxes.forEach(box => {
-        const boxTop = box.getBoundingClientRect().top
+      // getBoundingClientRect() method returns an elements position relative to the viewport
+      const boxTop = box.getBoundingClientRect().top;
 
-        if(boxTop < triggerPoint) {
-            box.classList.add('show')
-        } else {
-            box.classList.remove('show')
-        }
+      if (boxTop < triggerPoint) {
+        box.classList.add("show");
+      } else {
+        box.classList.remove("show");
+      }
     })
 }
 
