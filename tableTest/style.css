@@ -50,8 +50,6 @@ nav {
 }
 nav p {
     opacity: 0;
-    /* transform: scale(0); */
-    /* transform: rotate(180deg); */
     transition: all 0.4s 0.2s ease-in-out;
 }
 .show-nav p {
